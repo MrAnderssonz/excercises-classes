@@ -4,9 +4,42 @@ namespace excercises_classes
 {
     class Bongo
     {
-        public string name = "";
-        public int age = 0;
-        public string race = "";
+        string name = "";
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
+        }
+        int age = 0;
+        public int Age
+        {
+            get
+            {
+                return age;
+            }
+            set
+            {
+                age = value;
+            }
+        }
+        string race = "";
+        public string Race
+        {
+            get
+            {
+            return race;
+            }
+            set
+            {
+                race = value;
+            }
+        }
 
         public void bark()
         {

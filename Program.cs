@@ -7,11 +7,11 @@ namespace excercises_classes
         static void Main(string[] args)
         {
             Bongo myBongo = new Bongo();
-            myBongo.name = "Sven";
-            myBongo.age = 2;
-            myBongo.race = "Brun";
+            myBongo.Name = "Sven";
+            myBongo.Age = 2;
+            myBongo.Race = "Brun";
 
-            Console.WriteLine("{0} heter min Bongo antilop, han är {1}år och är av rasen {2}.",myBongo.name, myBongo.age, myBongo.race);
+            Console.WriteLine("{0} heter min Bongoantilop, han är {1}år och är av rasen {2}.",myBongo.Name, myBongo.Age, myBongo.Race);
             myBongo.bark();
             myBongo.fetch();
 
