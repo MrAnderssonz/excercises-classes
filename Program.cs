@@ -6,14 +6,12 @@ namespace excercises_classes
     {
         static void Main(string[] args)
         {
-            Bongo myBongo = new Bongo();
-            myBongo.Name = "Sven";
-            myBongo.Age = 2;
-            myBongo.Race = "Brun";
+            Bongo bongo = new Bongo("Sven", 2, "Brun");
+            
 
-            Console.WriteLine("{0} heter min Bongoantilop, han är {1}år och är av rasen {2}.",myBongo.Name, myBongo.Age, myBongo.Race);
-            myBongo.bark();
-            myBongo.fetch();
+            Console.WriteLine("{0} heter min Bongoantilop, han är {1}år och är av rasen {2}.",bongo.Name , bongo.Age, bongo.Race);
+            bongo.Bark();
+            bongo.Fetch();
 
         }
     }

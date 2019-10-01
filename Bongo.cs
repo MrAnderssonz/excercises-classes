@@ -5,10 +5,18 @@ namespace excercises_classes
     class Bongo
     {
         string name = "";
+        int age = 0;
+        string race = "";
+        public Bongo(string name, int age, string race)
+        {
+            this.name = name;
+            this.age = age;
+            this.race = race;
+        }
         public string Name
         {
-            get
-            {
+           get
+             {
                 return name;
             }
             set
@@ -16,7 +24,6 @@ namespace excercises_classes
                 name = value;
             }
         }
-        int age = 0;
         public int Age
         {
             get
@@ -28,7 +35,6 @@ namespace excercises_classes
                 age = value;
             }
         }
-        string race = "";
         public string Race
         {
             get
@@ -41,11 +47,11 @@ namespace excercises_classes
             }
         }
 
-        public void bark()
+        public void Bark()
         {
             Console.WriteLine("NÖFF");
         }
-        public void fetch()
+        public void Fetch()
         {
             Console.WriteLine("Jag har min egen vilja och tänker inte styras av dig!");
         }
